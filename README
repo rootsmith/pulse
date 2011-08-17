@@ -1,0 +1,13 @@
+<div id="elem">Click to load something</div>
+
+<script>
+    $('#elem').click(function() {
+        var interval = $(this).pulse('loading');
+        // load something via ajax
+        // and when done call clearInterval(interval)
+    });
+    $('#elem').pulse('loading');
+</script>
+
+The above will replace the div text with "loading ..." and animate the
+ellipses so they are pulsing as a load indicator.
